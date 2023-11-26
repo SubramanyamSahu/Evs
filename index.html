@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>EVS</title>
+</head>
     <style>
+        
 html{
     background-color: #000000;
 }
         
         .whole{
             background-image: url(SS.png);
-            background-attachment: fixed;
-            background-size: 100% 120%;
+           
+            /* background-attachment: fixed; */
+            background-size:contain;
+            background-size:100% 100%;
             background-repeat: no-repeat;
-            height:max-content;
-            border-radius: 8px;        
-                        
+            /* height: 2000px; */
+            width: auto;
+            
+                
         }
         
                         
@@ -23,17 +28,30 @@ html{
         header{
              background:linear-gradient(to bottom left,#5e1a61,#131358);
              color: #fcf3f3;
-             border-radius: 8px;
+             /* border-radius: 8px; */
              text-align: center;
-             padding: 10px;
-             height: 50px;
-             line-height: 10px;
-             margin-bottom: 20px;
+             padding: 5px;
+             /* height: 0px; */
+             /* line-height: 10px; */
+             /* margin-bottom: 20px; */
+             margin: 0;
                           
         }
 
         h1 {
             font-size: 36px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .subhead{
+            background-color: rgb(67, 0, 0);
+            font-size: 22px;
+            line-height: 1.6;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(255, 255, 255);
+            height: 100px;
+            justify-items: center;
+            text-align: center;
         }
                                                    
       
@@ -59,28 +77,33 @@ html{
             
         }
 
-
-        p {
+/*  */
+        .container p {
             font-size: 22px;
             line-height: 1.6;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
             margin-left: 10px;
             text-align: left;
             color: #fcf3f3;
-            width:900px ;
+            width: 725px ;
             margin: 20px;
-                                                
+             /* text-align: center; */
+            justify-content:center;
+                                           
+        }            
+    
         
-        }
+        
+        
         h3{
             font-size: 28px;color: #fcf3f3;
             margin: 10px;
             
         }
-        ul{
+        .container ul{
             font-size: 22px;
             line-height: 1.6;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',             sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',sans-serif;
             margin-left: 10px;
             text-align: left;
             color: #fcf3f3;
@@ -89,40 +112,20 @@ html{
             
         }
 
-        footer {
-            background:linear-gradient(to bottom left,#520742,#0c0c34);
-            color: #f6f7f5;
-            text-align: center;
-            padding: 05px;
-            flex-wrap: wrap;
-            flex-direction: row;
-            border-radius: 8px;
-            height: 50px;
-            
-            
-        }
-        .container{
-            height: 1900px;
-            margin: 10px;
-            
-        }
-        
+
      section {
                 color: #751414;
                 background-color: #a4b552;
                 padding: 10px;
                 border-radius: 8px;
                 font-size: 24px;
-                margin-top: 20px;
-                
                 width: 200px;
                 text-align:center;
                 margin-left:10px;
-                box-shadow:#3aa21a 0 0 20px;
-                                  
+                box-shadow:#3aa21a 0 0 20px;                              
             }
 
-        /* Custom Styles */
+        
         .solution{
             color: #da4141;
             background-color: #2f1010;
@@ -133,11 +136,11 @@ html{
             width: 200px;
             text-align:center;
         }
-        .nt{
-            background-color: #000000;
-            color: #ffffff;
-            
-        }
+        /* .nt{ */
+            /* background-color: #000000; */
+            /* color: #ffffff; */
+/*              */
+        /* } */
 
         .box{
      width: 100%;
@@ -159,7 +162,7 @@ html{
      border-radius: 50px;
      margin: auto;
      margin-left: 55px;
-     box-shadow: 0 0 10px#b7b8ab;
+     box-shadow: 0 0 10px#d9e08e;
      flex-wrap: wrap;
      flex-direction: row;
      justify-content: space-between;
@@ -167,6 +170,84 @@ html{
      cursor: pointer;
                  
  }
+ .one img
+{
+    height: 350px;
+    width:350px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* justify-content: center; */
+    float: left;
+    
+}
+.one{
+   background-color: #625bad;
+   height: 400px;
+   
+   
+}
+.two{
+    
+    font-size: 28px;
+    justify-content: space-between;
+    justify-content: center;
+    /* margin: auto; */
+    /* display: grid; */
+    /* align-items: center; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    column-gap: 50px;
+    
+}
+.two img{
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    float: right;
+
+}
+.two p{
+    color: white;
+    line-height: 1.6;
+    
+
+}
+.three{
+    display: flex;
+    column-gap: 50px;
+    background-color: white;
+    font-size: 28px;
+    color: #000000;
+    
+}
+.three img{
+    
+    height: 400px;
+margin-top: 30px;
+margin-bottom: 20px;
+border-radius: 10px;
+margin-left: 10px;
+float: right;
+}
+.three p{
+    color: rgb(0, 0, 0);
+line-height: 1.6;
+justify-content: center;
+}
+
+footer {
+    background:linear-gradient(to bottom left,#692259,#0c0c34);
+    color: #f6f7f5;
+    text-align: center;
+    padding: 05px;
+    flex-wrap: wrap;
+    flex-direction:row;
+    border-radius: 8px;
+    height: 50px;
+    
+    
+}
 
         .nt:hover{
             background: linear-gradient(#ff0000 ,#ffc0cb);
@@ -178,90 +259,124 @@ html{
                           
         
     </style>
-</head>
 <body>
-    <div class="whole">
+    
     <header>
         <h1><b>IDENTIFICATION OF ElECTRICAL ENERGY WASTAGE AND ITS SOLUTIONS</b></h1>
-    </header>   
-   
-                                               
-    <div class="container">
-        <section id="project-title"><b>About</b></section>
-        <p>Introducing the issue of electrical energy wastage due to electronic gadgets and exploring sustainable solutions to address 
-           this problem.
-           <br>Growth in the IT and communication sectors has enhanced the usage of the electronic equipment exponentially. The growing problem of e-waste calls for greater emphasis on recycling e-waste and better e-waste management.
-           <br>Identification of electrical energy wastage attributed to electronic gadgets is an imperative concern in our modern, 
-           technology-driven world. In our quest for convenience and connectivity, we often overlook the hidden energy drains these gadgets 
-           pose. One prominent issue is standby power consumption, often referred to as “vampire power” or “phantom load.” This occurs when 
-           electronic devices, even in their dormant state, continue to draw power from the grid. Identifying such wastage begins with a keen 
-           eye for indicators like warm chargers, illuminated LED lights, or devices that remain warm even when not in use. Energy monitoring 
-           tools and smart meters can also provide valuable insights into energy usage patterns, helping individuals and households pinpoint 
-           energy-hungry culprits.</p>
-        <section id="project-title"><b>Causes of Wastage</b></section>
-        <p>
-            Electrical energy wastage caused by electronic gadgets is a critical issue in modern society. Many devices continue to consume power even when not in use, contributing to higher electricity bills and environmental degradation.
-            <br>The increasing number of electronic products that are being manufactured by companies and bought by consumers. Demand is high. Often, when electrical appliances and products break, and it is cheaper to buy a replacement than it is to fix the original.
-            <br>In other circumstances, people like to upgrade to the latest model when it is released — such as the latest mobile phone.
+    </header>  
 
-            <br>In fact, to put the issue of electronic waste in perspective: the world generated 53.6 million tonnes of e-waste in 2019 alone.
-        </p>
-        <section id="project-title"><b>Solutions</b></section>
-        
-        
-            <h3> 1. Energy-Efficient Gadgets</h3>
-             <ul><li> In energy-efficient electronic devices to reduce power consumption.</li></ul>
-            <h3> 2. Smart Power Strips</h3>
-            
-            <p>
-              <ul><li>Smart power strips that automatically cut off power to idle devices.</li>
-                <li>Use smart power strips that cut off power to idle devices.</li>
-                <li>Opt for energy-efficient gadgets with low standby power.</li>
-               </ul>                
-            </p>
-            <h3>3. Maintain</h3>
-            <ul><li>Unplug devices when not in use.</li>
-                                              
-            <li>Educate yourself and others on responsible energy use.</li>
-            
-            </ul>
-                                     
-        <section id="project-title"><b>Get Involved</b></section>
-        
-        <p>
-            Waste to Energy (WTE), is used to describe various technologies that convert non-recyclable waste into usable forms of energy including heat, fuels and electricity. WTE can occur through a number of processes such as incineration, gasification, pyrolysis, anaerobic digestion, and landfill gas recovery.
-            <br> When disposing of e-waste, you need to bring it to a designated collection place, usually a special recycling bin, a certified collection site, or major electronics retailers. Always check for rules that are valid in your country. 
-            <br>Learn how you can contribute to energy conservation and make a difference. 
-        </p>
-    
+  
+    <div class="subhead">
+        <p><b>Electrical energy is a valuable resource that is essential for our modern way of life. However, we often use it wastefully, which 
+   can lead to higher energy bills and environmental damage. Here are some important points on the identification of electrical energy 
+   wastage and its solutions:</b></p>
     </div> 
-    </div>  
+  
+   
+<div class="whole">
+       <div class="container">
+        <br>
+         <section id="project-title"><b>About</b></section>
+         <p>Introducing the issue of electrical energy wastage due to electronic gadgets and exploring sustainable solutions to address 
+            this problem.
+            <br>Growth in the IT and communication sectors has enhanced the usage of the electronic equipment exponentially. The growing problem of e-waste calls for greater emphasis on recycling e-waste and better e-waste management.
+            <br>Identification of electrical energy wastage attributed to electronic gadgets is an imperative concern in our modern, 
+            technology-driven world. In our quest for convenience and connectivity, we often overlook the hidden energy drains these gadgets 
+            pose. One prominent issue is standby power consumption, often referred to as “vampire power” or “phantom load.” This occurs when 
+            electronic devices, even in their dormant state, continue to draw power from the grid. Identifying such wastage begins with a keen 
+            eye for indicators like warm chargers, illuminated LED lights, or devices that remain warm even when not in use. Energy monitoring 
+            tools and smart meters can also provide valuable insights into energy usage patterns, helping individuals and households pinpoint 
+            energy-hungry culprits.</p>
+        
+         <section id="project-title"><b>Causes of Wastage</b></section>
+         <p>
+             Electrical energy wastage caused by electronic gadgets is a critical issue in modern society. Many devices continue to consume power even when not in use, contributing to higher electricity bills and environmental degradation.
+             <br>The increasing number of electronic products that are being manufactured by companies and bought by consumers. Demand is high. Often, when electrical appliances and products break, and it is cheaper to buy a replacement than it is to fix the original.
+             <br>In other circumstances, people like to upgrade to the latest model when it is released — such as the latest mobile phone.
+     
+             <br>In fact, to put the issue of electronic waste in perspective: the world generated 53.6 million tonnes of e-waste in 2019 alone.
+         </p>
+        
+         <section id="project-title"><b>Solutions</b></section>
+         
+         
+             <h3> 1. Energy-Efficient Gadgets</h3>
+              <ul><li> In energy-efficient electronic devices to reduce power consumption.</li></ul>
+             <h3> 2. Smart Power Strips</h3>
+             
+             <p>
+               <ul><li>Smart power strips that automatically cut off power to idle devices.</li>
+                 <li>Use smart power strips that cut off power to idle devices.</li>
+                 <li>Opt for energy-efficient gadgets with low standby power.</li>
+                </ul>                
+             </p>
+             <h3>3. Maintain</h3>
+             <ul><li>Unplug devices when not in use.</li>
+                                               
+             <li>Educate yourself and others on responsible energy use.</li>
+             
+             </ul>
+                                      
+         <section id="project-title"><b>Get Involved</b></section>
+         
+          <p>
+              Waste to Energy (WTE), is used to describe various technologies that convert non-recyclable waste into usable forms of energy including heat, fuels and electricity. WTE can occur through a number of processes such as incineration, gasification, pyrolysis, anaerobic digestion, and landfill gas recovery.
+              <br> When disposing of e-waste, you need to bring it to a designated collection place, usually a special recycling bin, a certified collection site, or major electronics retailers. Always check for rules that are valid in your country. 
+              <br>Learn how you can contribute to energy conservation and make a difference. 
+          </p>    
+       </div> 
+</div>
+    
 
+    <div class="one">
+        
+        <img src="monitor.jpg">
+        <img src="Sustinable.png">
+        <img src="waste-to-energy.jpg">
+        <img src="waste-hierarchy.jpg">
 
+    </div>
+    
+    <div class="two">
+        <img src="energy.png">
+        <p>        
+            Use energy-efficient lighting. Incandescent and halogen bulbs are very inefficient and waste a lot of energy. Switch to LED bulbs instead. LED bulbs use up to 80% less energy than incandescent bulbs and last much longer.
+            <br>
+            <br>
+            Make sure your appliances are well-maintained. Regular maintenance can help your appliances run more efficiently and use less energy. For example, change the air filters in your furnace and air conditioner regularly.
+        </p>
+    </div>
+    <div class="three">
+        <img src="light.png">
+        <p>
+            There are a number of things you can do to reduce electrical energy wastage in your home. One of the most important things is to identify the appliances and devices that are using the most energy. Once you know which appliances are using the most energy, you can take steps to reduce your usage.
+        </p>
+    </div>
    
     <footer>
         
         <div class="box">
             <h3>Reference:-</h3> 
-        <div class="newbox">
-            
-            <a href="https://www.electricianinperth.com.au/blog/how-electrical-energy-loss-and-misuse-is-wasted-at-home/"target="_main">Electrician
-                Inperth    </a>
-        </div>
+            <div class="newbox">
+                
+                <a href="https://www.electricianinperth.com.au/blog/how-electrical-energy-loss-and-misuse-is-wasted-at-home/"target="_main">Electrician
+                    Inperth    </a>
+            </div>
 
-        <div class="newbox">
-            <a href="https://sensoneo.com/how-to-recycle-e-waste/"target="_main">Sensoneo</a>
-        </div>
+            <div class="newbox">
+                <a href="https://sensoneo.com/how-to-recycle-e-waste/"target="_main">Sensoneo</a>
+            </div>
 
-        <div class="newbox">
-            
-            <a href="https://timesofindia.indiatimes.com/blogs/voices/12-ways-to-reduce-and-control-e-waste-for-2022/"target="_main">TOI</a>
-        </div>
+            <div class="newbox">
+                
+                <a href="https://timesofindia.indiatimes.com/blogs/voices/12-ways-to-reduce-and-control-e-waste-for-2022/"target="_main">TOI</a>
+            </div>
         
-        <div class="newbox">           
-         <a href="https://www.teriin.org/article/e-waste-management-india-challenges-and-opportunities"target="_main">Teriin</a>       
+            <div class="newbox">           
+             <a href="https://www.teriin.org/article/e-waste-management-india-challenges-and-opportunities"target="_main">Teriin</a>       
+            </div>
         </div>
-        </div>
+  
 
     </footer>
 </body>
